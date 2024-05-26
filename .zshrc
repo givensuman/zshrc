@@ -12,8 +12,6 @@
 # Config #
 ##########
 
-ZSH_THEME="givensuman"
-
 plugins=(
   git
   sudo
@@ -24,16 +22,19 @@ plugins=(
   tmux
 )
 
+ZSH_THEME="givensuman"
+bindkey '^g' autosuggest-accept
+
 # github.com/sharkdp/bat
 alias cat="bat"
 # github.com/0xTadash1/bat-into-tokyonight
 export BAT_THEME="tokyonight_night"
 
-# oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
-bindkey '^g' autosuggest-accept
+# tmux
+export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_UNICODE=true
+export ZSH_TMUX_FIXTERM=true
+export ZSH_TMUX_AUTONAME_SESSION=true
 
 # bun
 [ -s "/home/given/.bun/_bun" ] && source "/home/given/.bun/_bun"
@@ -49,12 +50,6 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 # golang
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH="$PATH:/usr/local/go/bin"
-
-# tmux
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_UNICODE=true
-ZSH_TMUX_FIXTERM=true
-ZSH_TMUX_AUTONAME_SESSION=true
 
 ###########
 # Aliases #
@@ -111,3 +106,11 @@ perm-all() {
 claim() {
   sudo chown -R $USER $1
 }
+
+###############
+# LOAD CONFIG #
+###############
+
+# oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
