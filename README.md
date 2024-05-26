@@ -21,4 +21,4 @@ cp zshrc/.oh-my-zsh/themes/givensuman.zsh-theme ~/.oh-my-zsh/themes
 source ~/.zshrc
 ```
 
-![zsh_screenshot](https://github.com/givensuman/zshrc/assets/16063606/8896a9d5-711f-4ba6-9c94-429d9df73d4a)
+![zshrc](https://github.com/givensuman/zshrc/assets/16063606/696e3741-b017-4d44-a456-d2639ae3e632)
