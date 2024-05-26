@@ -21,6 +21,7 @@ plugins=(
   copyfile
   zsh-autosuggestions
   zsh-syntax-highlighting
+  tmux
 )
 
 # github.com/sharkdp/bat
@@ -46,8 +47,14 @@ eval "$(fnm env --use-on-cd)"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # golang
-# export PATH="$PATH:/usr/local/go/bin"
-# export GOPATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$PATH:/usr/local/go/bin"
+
+# tmux
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_UNICODE=true
+ZSH_TMUX_FIXTERM=true
+ZSH_TMUX_AUTONAME_SESSION=true
 
 ###########
 # Aliases #
