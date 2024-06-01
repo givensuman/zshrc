@@ -12,9 +12,8 @@
 # Programs #
 ############
 
-# github.com/sharkdp/bat
+# bat
 alias cat="bat"
-# github.com/0xTadash1/bat-into-tokyonight
 export BAT_THEME="tokyonight_night"
 
 # tmux
@@ -83,6 +82,7 @@ plugins=(
   common-aliases
   command-not-found
   tmux
+  zsh-eza
   zsh-autosuggestions # must be second-to-last
   zsh-syntax-highlighting # must be last
 )
