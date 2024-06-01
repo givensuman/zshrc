@@ -26,7 +26,7 @@ cp zshrc/.zshrc ~
 source ~/.zshrc
 ```
 
-![zshrc](https://github.com/givensuman/zshrc/assets/16063606/696e3741-b017-4d44-a456-d2639ae3e632)
+![Screenshot from 2024-06-01 15-10-58](https://github.com/givensuman/zshrc/assets/16063606/ce1c2492-d651-4500-851a-011f86442b96)
 
 #### Dependencies
 
