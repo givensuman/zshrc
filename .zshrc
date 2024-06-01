@@ -8,22 +8,9 @@
 #        __/\\\__/\\\\\\\\\\\__/\\\\\\\\\\_\/\\\___\/\\\_\/\\\_________\///\\\\\\\\_
 #         _\///__\///////////__\//////////__\///____\///__\///____________\////////___
 
-##########
-# Config #
-##########
-
-plugins=(
-  git
-  sudo
-  copypath
-  copyfile
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  tmux
-)
-
-ZSH_THEME="givensuman"
-bindkey '^g' autosuggest-accept
+############
+# Programs #
+############
 
 # github.com/sharkdp/bat
 alias cat="bat"
@@ -70,46 +57,38 @@ alias refresh="source $HOME/.zshrc"
 # Functions #
 #############
 
-# base64
-base64_encode() {
-  echo -n "$1" | base64
-}
-base64_decode() {
-  echo -n "$1" | base64 -d
-}
-
-# tar
 compress() {
   tar -czvf $1.tgz $1
 }
+
 decompress() {
   tar -zxv -f $1
 }
 
-# make and go to new directory
-mkdircd() {
+mkcd() {
   mkdir $1
   cd $1
 }
 
-# backup file
-bak() {
-  cp $1{,.bak}
-}
+##########
+# Config #
+##########
 
-# add all permissions
-perm-all() {
-  chmod -R 777 $1
-}
+plugins=(
+  git
+  git-extras
+  sudo
+  copypath
+  copyfile
+  common-aliases
+  command-not-found
+  tmux
+  zsh-autosuggestions # must be second-to-last
+  zsh-syntax-highlighting # must be last
+)
 
-# claim ownership 
-claim() {
-  sudo chown -R $USER $1
-}
-
-###############
-# LOAD CONFIG #
-###############
+ZSH_THEME="appa"
+bindkey '^g' autosuggest-accept
 
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
