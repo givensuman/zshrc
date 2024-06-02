@@ -37,6 +37,9 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH="$PATH:/usr/local/go/bin"
 
+# ziglang
+export PATH="$PATH:/usr/local/zig"
+
 ###########
 # Aliases #
 ###########
@@ -51,6 +54,8 @@ alias processes="ps -f"
 
 # refresh shell environment
 alias refresh="source $HOME/.zshrc"
+
+alias lazy="lazygit"
 
 #############
 # Functions #
@@ -89,6 +94,7 @@ plugins=(
 
 ZSH_THEME="appa"
 bindkey '^g' autosuggest-accept
+export AUTOCD=1
 
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
