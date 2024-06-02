@@ -73,10 +73,10 @@ cargo install --locked eza
 cargo install --locked bat
 ```
 
-[bat-int-tokyonight](https://github.com/0xTadash1/bat-into-tokyonight)
+[bat-into-tokyonight](https://github.com/0xTadash1/bat-into-tokyonight)
 
 ```shell
-git clone https://github.com/0xTadash1/bat-into-tokyonighthttps://go.dev
+git clone https://github.com/0xTadash1/bat-into-tokyonight
 cd bat-into-tokyonight
 ./bat-into-tokyonight
 ```
@@ -90,7 +90,7 @@ curl -fsSL https://bun.sh/install | bash
 [fnm](https://github.com/Schniz/fnm)
 
 ```shell
-curl -fsSL https://fnm.vercel.app/install | bash
+curl -fsSL https://fnm.vercel.app/install | bash --skip-shell
 ```
 
 [neovim](https://github.com/neovim/neovim)
