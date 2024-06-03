@@ -63,12 +63,6 @@ git clone https://github.com/z-shell/zsh-eza ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/
 git clone https://github.com/fdellwing/zsh-bat ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-bat
 ```
 
-[zinsults](https://github.com/ahmubashshir/zinsults)
-
-```shell
-git clone https://github.com/ahmubashshir/zinsults ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zinsults
-```
-
 <br>
 
 And, like, a bunch of libraries:
