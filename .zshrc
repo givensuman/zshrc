@@ -8,12 +8,11 @@
 #        __/\\\__/\\\\\\\\\\\__/\\\\\\\\\\_\/\\\___\/\\\_\/\\\_________\///\\\\\\\\_
 #         _\///__\///////////__\//////////__\///____\///__\///____________\////////___
 
-############
-# Programs #
-############
+#############
+# Libraries #
+#############
 
 # bat
-alias cat="bat"
 export BAT_THEME="tokyonight_night"
 
 # tmux
@@ -69,11 +68,6 @@ decompress() {
   tar -zxv -f $1
 }
 
-mkcd() {
-  mkdir $1
-  cd $1
-}
-
 ##########
 # Config #
 ##########
@@ -87,7 +81,9 @@ plugins=(
   common-aliases
   command-not-found
   tmux
+  zinsults
   zsh-eza
+  zsh-bat
   zsh-autosuggestions # must be second-to-last
   zsh-syntax-highlighting # must be last
 )
