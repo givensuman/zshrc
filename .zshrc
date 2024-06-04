@@ -106,6 +106,7 @@ plugins=(
 
 ZSH_THEME="appa"
 bindkey '^g' autosuggest-accept
+bindkey '^f' forward-word
 export AUTOCD=1
 
 # oh-my-zsh
